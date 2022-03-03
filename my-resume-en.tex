@@ -1,0 +1,270 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+% Disable bookmarks.
+% \hypersetup{draft}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape Tzu Chun, Hsu} \\ \vspace{1pt}
+  New Taipei, Taiwan \\ \vspace{8pt}
+  \small \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719 (Taiwan)} ~} \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} ~ 
+  \href{https://www.linkedin.com/in/tzu-chun-hsu-ab4b3b188/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{tzu-chun-hsu-ab4b3b188}}  ~
+  \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
+  % \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zhejiang University}{09 2016 -- 07 2020}
+      {Bachelor of Computer Science}{Hangzhou, China}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Last two years cumulative GPA: 3.30/4.00}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+  % \vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://bit.ly/35GzBmc}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}} \href{https://bit.ly/35GzBmc}{\raisebox{-0.1\height}\faExternalLink }}}{04 2018 -- 05 2019}
+      {}{Hangzhou, China}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN, and implemented with \href{https://pytorch.org/}{PyTorch}.}}
+        \resumeItem{\normalsize{Improved VAE to extract chords more easily.}}
+        \resumeItem{\normalsize{Improved \href{https://arxiv.org/pdf/1704.00028}{WGAN-GP} to solve mode collapse problem, vanishing gradient problem, and bad results of some audio tracks.}}
+        \resumeItem{\normalsize{Proposed three distinct loss functions, element-wise, discriminator dominant, and hybrid.}}
+      \resumeItemListEnd 
+      % \vspace{-13pt}
+
+    \resumeSubheading
+      {\href{https://bit.ly/3IzE3BU}{\textbf{\large{\underline{Voice Conversion Based on Generative Adversarial Networks}}} \href{https://bit.ly/3IzE3BU}{\raisebox{-0.1\height}\faExternalLink }}}{03 2020 -- 05 2020}
+      {}{Hangzhou, China}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Improved \href{https://arxiv.org/pdf/1907.12279}{StarGAN-VC2} based on multi-speaker non-parallel corpus.}}
+        \resumeItem{\normalsize{Introduced \href{https://arxiv.org/pdf/1712.01026}{WGAN-div} to resolve k-Lipschitz constraint of \href{https://arxiv.org/pdf/1701.07875}{WGAN}.}}
+        \resumeItem{\normalsize{Provided new generator network by replacing \href{https://arxiv.org/pdf/1610.07629}{cIN} layer with trainable \href{https://arxiv.org/pdf/1703.06868}{AdaIN} layer for better performance.}}
+        \resumeItem{\normalsize{Introduced neural vocoder, \href{https://arxiv.org/pdf/1811.00002}{WaveGlow}, to generate high quality speech from mel-spectrograms.}}
+      \resumeItemListEnd 
+      % \vspace{-13pt}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CCCC-Mobile Application Innovation Contest}{09 2018}
+      {First Prize}{Hangzhou, China}
+
+    \resumeSubheading
+      {The 4th "Internet+" Innovation and Entrepreneurship Competition}{09 2018}
+      {Gold Medal Award}{Hangzhou, China}
+
+    \resumeSubheading
+      {Hong Kong, Macau, and Taiwan student scholarship}{09 2018}
+      {Third Prize}{Hangzhou, China}
+
+    \resumeSubheading
+      {College Students' Innovative Entrepreneurial Training Plan Program (SRTP)}{04 2018 -- 05 2019}
+      {Excellent}{Hangzhou, China}
+
+    \resumeSubheading
+      {Hong Kong, Macau, and Taiwan student scholarship}{12 2019}
+      {Second Prize}{Hangzhou, China}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+% {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+% {\underline{Role Name}}{city, country}
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of British Columbia Vancouver Summer Program}{07 2019 -- 08 2019}
+      {}{Vancouver, Canada}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Intensive 4-week academic program for 2 courses, "Algorithms and the World Wide Web" and "Building Modern Web Applications".}}
+        \resumeItem{\normalsize{Collaborated with my teammates to complete our projects as team leader.}}
+        \resumeItem{\normalsize{Experienced the active study atmosphere in UBC, and broadened my horizons.}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+  \resumeItemListStart
+    \resumeItem{\textbf{\normalsize{Languages:}}{ \normalsize{\href{https://www.python.org/}{Python}, \href{https://www.java.com/}{Java}, C, JavaScript}}}
+    \resumeItem{\textbf{\normalsize{Technologies/Frameworks:}}{ \normalsize{\href{https://pytorch.org/}{PyTorch}, \href{https://keras.io/}{Keras}, \href{https://opencv.org/}{OpenCV}, \href{https://spring.io/projects/spring-boot}{Spring Boot}, \href{https://vuejs.org/}{Vue.js}, \href{https://www.mysql.com/}{MySQL}, \href{https://flask.palletsprojects.com/}{Flask}, \href{https://nodejs.org/}{Node.js}, \href{https://www.mathworks.com/products/matlab.html}{MATLAB}, \href{https://git-scm.com/}{Git}, \href{https://www.mongodb.com/}{MongoDB}, \href{https://www.latex-project.org/}{\LaTeX}}}}
+  \resumeItemListEnd 
+
+
+%-----------INVOLVEMENT---------------
+% \section{EXTRACURRICULAR}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
+%             \resumeItemListStart
+%                 \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ 
+%-----------CERTIFICATIONS---------------
+% \section{CERTIFICATIONS}
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{ReactJS \& Redux - Udemy}} \hspace{1.6cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Command Line in Linux - Coursera}}\\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Python for Data Science - XIE}} \hspace{1cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Microsoft AI Classroom - Microsoft}} \\
+
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{\textbf{5 Stars} in \textbf{C++} \& \textbf{SQL} \href{certificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}\hspace{1.45cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{NodeJS with Express \& MongoDB - Udemy}} \\
+
+
+\end{document}
