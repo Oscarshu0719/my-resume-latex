@@ -1,5 +1,7 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt,UTF8]{article}
 
+\usepackage{ctex}
+% \usepackage {xeCJK}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -15,7 +17,7 @@
 \usepackage{graphicx}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+% \input{glyphtounicode} % disable while using cTeX library
 
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
@@ -78,8 +80,8 @@
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% Ensure that generate pdf is machine readable/ATS parsable (disable while using cTeX library)
+% \pdfgentounicode=1
 
 
 %-------------------------
@@ -134,14 +136,13 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-  {\Huge \scshape Tzu Chun, Hsu} \\ \vspace{1pt}
-  New Taipei City, Taiwan \\ \vspace{8pt}
-  \small \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719 (Taiwan)} ~} \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} ~ 
+  {\Huge \scshape \CJKfamily{zhkai} 許子駿} \\ \vspace{1pt}
+  \heiti 新北市, 臺灣 \\ \vspace{8pt}
+  \small \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719} ~} \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} ~ 
   \href{https://www.linkedin.com/in/tzu-chun-hsu-ab4b3b188/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{tzu-chun-hsu-ab4b3b188}}  ~
   \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
   % \vspace{-8pt}
@@ -152,10 +153,10 @@
 \section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Zhejiang University}{09 2016 -- 07 2020}
-      {Bachelor of Computer Science}{Hangzhou, China}
+      {浙江大學}{09 2016 -- 07 2020}
+      {計算機科學與技術學士}{杭州, 中國}
       \resumeItemListStart
-        \resumeItem{\normalsize{Last two years cumulative GPA: 3.30/4.00}}
+        \resumeItem{\normalsize{最後兩年GPA: 3.30/4.00}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -165,24 +166,24 @@
   % \vspace{-5pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\href{https://bit.ly/35GzBmc}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}} \href{https://bit.ly/35GzBmc}{\raisebox{-0.1\height}\faExternalLink }}}{04 2018 -- 05 2019}
-      {}{Hangzhou, China}
+      {\href{https://bit.ly/35GzBmc}{\textbf{\large{\underline{基於生成對抗網路的古箏自動編曲系統}}} \href{https://bit.ly/35GzBmc}{\raisebox{-0.1\height}\faExternalLink }}}{04 2018 -- 05 2019}
+      {}{杭州, 中國}
       \resumeItemListStart
-        \resumeItem{\normalsize{Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN, and implemented with \href{https://pytorch.org/}{PyTorch}.}}
-        \resumeItem{\normalsize{Improved VAE to extract chords more easily.}}
-        \resumeItem{\normalsize{Improved \href{https://arxiv.org/abs/1704.00028}{WGAN-GP} to solve mode collapse problem, vanishing gradient problem, and bad results of some audio tracks.}}
-        \resumeItem{\normalsize{Proposed three distinct loss functions: \textit{element-wise}, \textit{discriminator dominant}, and \textit{hybrid}.}}
+        \resumeItem{\normalsize{基於變分自動編碼器 (VAE) 和生成對抗網路 (GAN)，提出一個生成多音軌 (multi-track) 符號音樂 (symbolic music) 的框架，並通過 \href{https://pytorch.org/}{PyTorch} 實現。}}
+        \resumeItem{\normalsize{改進VAE，使得和弦更容易解析。}}
+        \resumeItem{\normalsize{改進 \href{https://arxiv.org/abs/1704.00028}{WGAN-GP}，解決模式崩壞 (mode collapse)、梯度消失 (vanishing gradient) 和部分音軌效果較差的問題。}}
+        \resumeItem{\normalsize{提出三種損失函數 (loss function)：\textit{element-wise}, \textit{discriminator dominant}, 和 \textit{hybrid}。}}
       \resumeItemListEnd 
       % \vspace{-13pt}
 
     \resumeSubheading
-      {\href{https://bit.ly/3IzE3BU}{\textbf{\large{\underline{Voice Conversion Based on Generative Adversarial Networks}}} \href{https://bit.ly/3IzE3BU}{\raisebox{-0.1\height}\faExternalLink }}}{03 2020 -- 05 2020}
-      {}{Hangzhou, China}
+      {\href{https://bit.ly/3IzE3BU}{\textbf{\large{\underline{基於生成對抗網路的語音轉換研究}}} \href{https://bit.ly/3IzE3BU}{\raisebox{-0.1\height}\faExternalLink }}}{03 2020 -- 05 2020}
+      {}{杭州, 中國}
       \resumeItemListStart
-        \resumeItem{\normalsize{Improved \href{https://arxiv.org/abs/1907.12279}{StarGAN-VC2} based on multi-speaker non-parallel corpus.}}
-        \resumeItem{\normalsize{Introduced \href{https://arxiv.org/abs/1712.01026}{WGAN-div} to resolve k-Lipschitz constraint of \href{https://arxiv.org/abs/1701.07875}{WGAN}.}}
-        \resumeItem{\normalsize{Provided new generator network by replacing \href{https://arxiv.org/abs/1610.07629}{cIN} layer with trainable \href{https://arxiv.org/abs/1703.06868}{AdaIN} layer for better performance.}}
-        \resumeItem{\normalsize{Introduced neural vocoder, \href{https://arxiv.org/abs/1811.00002}{WaveGlow}, to generate high quality speech from mel-spectrograms.}}
+        \resumeItem{\normalsize{基於多語者 (multi-speaker) 非平行語料庫 (non-parallel corpus)，改進 \href{https://arxiv.org/abs/1907.12279}{StarGAN-VC2}。}}
+        \resumeItem{\normalsize{引入 \href{https://arxiv.org/abs/1712.01026}{WGAN-div} 解決 \href{https://arxiv.org/abs/1701.07875}{WGAN} 原有的k-Lipschitz限制。}}
+        \resumeItem{\normalsize{通過將生成網路 (generator) 的 \href{https://arxiv.org/abs/1610.07629}{cIN} 層替換成 \href{https://arxiv.org/abs/1703.06868}{AdaIN} 層，提升生成的語音效果。}}
+        \resumeItem{\normalsize{引入神經網路語音合成器 (neural vocoder) \href{https://arxiv.org/abs/1811.00002}{WaveGlow}，通過梅爾時頻譜 (mel-spectrograms) 生成較高音質的語音。}}
       \resumeItemListEnd 
       % \vspace{-13pt}
   \resumeSubHeadingListEnd
@@ -193,24 +194,24 @@
 \section{AWARDS}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {CCCC-Mobile Application Innovation Contest}{09 2018}
-      {First Prize}{Hangzhou, China}
+      {中國高校計算機大賽移動應用創新賽}{09 2018}
+      {一等獎}{杭州, 中國}
 
     \resumeSubheading
-      {The 4th "Internet+" Innovation and Entrepreneurship Competition}{09 2018}
-      {Gold Award}{Hangzhou, China}
+      {第四屆中國"互聯網+"大學生創新創業大賽}{09 2018}
+      {金獎}{杭州, 中國}
 
     \resumeSubheading
-      {Hong Kong, Macau, and Taiwan student scholarship}{09 2018}
-      {Third Prize}{Hangzhou, China}
+      {港澳台學生獎學金}{09 2018}
+      {三等獎}{杭州, 中國}
 
     \resumeSubheading
-      {College Students' Innovative Entrepreneurial Training Plan Program (SRTP)}{04 2018 -- 05 2019}
-      {Excellent}{Hangzhou, China}
+      {國家級大學生創新創業訓練計畫 (SRTP)}{04 2018 -- 05 2019}
+      {優秀}{杭州, 中國}
 
     \resumeSubheading
-      {Hong Kong, Macau, and Taiwan student scholarship}{12 2019}
-      {Second Prize}{Hangzhou, China}
+      {港澳台學生獎學金}{12 2019}
+      {二等獎}{杭州, 中國}
   \resumeSubHeadingListEnd
 \vspace{-12pt}
 
@@ -218,25 +219,28 @@
 % {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
 % {\underline{Role Name}}{city, country}
 %-----------EXPERIENCE-----------
-\section{EXPERIENCE}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The University of British Columbia Vancouver Summer Program}{07 2019 -- 08 2019}
-      {}{Vancouver, Canada}
-      \resumeItemListStart
-        \resumeItem{\normalsize{Intensive 4-week academic program for 2 courses, "Algorithms and the World Wide Web" and "Building Modern Web Applications".}}
-        \resumeItem{\normalsize{Collaborated with my teammates to complete our projects as team leader.}}
-        \resumeItem{\normalsize{Experienced the active study atmosphere in UBC, and broadened my horizons.}}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-12pt}
+
+% Omit this part to make resume in 1 paper.
+
+% \section{EXPERIENCE}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {英屬哥倫比亞大學 (UBC) 溫哥華暑期計畫 (VSP)}{07 2019 -- 08 2019}
+%       {}{溫哥華, 加拿大}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{高強度的四周課程，包含"Algorithms and the World Wide Web"和"Building Modern Web Applications"。}}
+%         \resumeItem{\normalsize{在團隊中擔任組長，並和組員共同完成專案。}}
+%         \resumeItem{\normalsize{在這四周感受UBC不同的學習氛圍，拓展視野。}}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{TECHNICAL SKILLS}
   \resumeItemListStart
-    \resumeItem{\textbf{\normalsize{Languages:}}{ \normalsize{\href{https://www.python.org/}{Python}, \href{https://www.java.com/}{Java}, C, JavaScript}}}
-    \resumeItem{\textbf{\normalsize{Technologies/Frameworks:}}{ \normalsize{\href{https://pytorch.org/}{PyTorch}, \href{https://keras.io/}{Keras}, \href{https://opencv.org/}{OpenCV}, \href{https://spring.io/projects/spring-boot}{Spring Boot}, \href{https://vuejs.org/}{Vue.js}, \href{https://www.mysql.com/}{MySQL}, \href{https://flask.palletsprojects.com/}{Flask}, \href{https://nodejs.org/}{Node.js}, \href{https://www.mathworks.com/products/matlab.html}{MATLAB}, \href{https://git-scm.com/}{Git}, \href{https://www.mongodb.com/}{MongoDB}, \href{https://www.latex-project.org/}{\LaTeX}}}}
+    \resumeItem{\textbf{\normalsize{語言:}}{ \normalsize{\href{https://www.python.org/}{Python}, \href{https://www.java.com/}{Java}, C, JavaScript}}}
+    \resumeItem{\textbf{\normalsize{技術/框架:}}{ \normalsize{\href{https://pytorch.org/}{PyTorch}, \href{https://keras.io/}{Keras}, \href{https://opencv.org/}{OpenCV}, \href{https://spring.io/projects/spring-boot}{Spring Boot}, \href{https://vuejs.org/}{Vue.js}, \href{https://www.mysql.com/}{MySQL}, \href{https://flask.palletsprojects.com/}{Flask}, \href{https://nodejs.org/}{Node.js}, \href{https://www.mathworks.com/products/matlab.html}{MATLAB}, \href{https://git-scm.com/}{Git}, \href{https://www.mongodb.com/}{MongoDB}, \href{https://www.latex-project.org/}{\LaTeX}}}}
   \resumeItemListEnd 
 
 

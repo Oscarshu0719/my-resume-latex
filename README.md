@@ -19,10 +19,10 @@ pdflatex my-resume-en.tex
 ``` 
 
 # Windows
-pdflatex.exe my-resume-tw.tex
+xelatex.exe my-resume-zh_tw.tex
 
 # Linux
-pdflatex my-resume-tw.tex
+xelatex my-resume-zh_tw.tex
 
 ```
 
@@ -31,10 +31,10 @@ pdflatex my-resume-tw.tex
 ``` 
 
 # Windows
-pdflatex.exe my-resume-cn.tex
+xelatex.exe my-resume-zh_cn.tex
 
 # Linux
-pdflatex my-resume-cn.tex
+xelatex my-resume-zh_cn.tex
 
 ```
 
@@ -42,7 +42,7 @@ pdflatex my-resume-cn.tex
 
 ``` 
 
-# Windows (run) 
+# Windows (double click to run) 
 clean.bat
 
 # Linux
