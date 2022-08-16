@@ -1,5 +1,7 @@
 # my-resume-latex
 
+> TODO: Font Awesome version is NOT compatible for my MacBook Air M1. Failed to compile zh-tw version.
+
 ## Usage
 
 - English (en) version:
