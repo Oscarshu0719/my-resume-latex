@@ -1,6 +1,6 @@
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass{resume}
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
 \usepackage{xcolor}
 \usepackage{fontawesome}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
@@ -12,19 +12,18 @@
 %   pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
 % }
 
-\name{Tzu Chun, Hsu} % Your name
+\name{Tzu Chun, Hsu}
 \address{New Taipei City, Taiwan} 
 \address{
 \small \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719} ~} \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} ~ 
   \href{https://www.linkedin.com/in/tzu-chun-hsu-ab4b3b188/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{tzu-chun-hsu-ab4b3b188}}  ~
   \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
 }
-% \address{\href{tel:+886-987605719}{+886-987605719} \\ \href{mailto:vm3y3rmp40719@gmail.com}{vm3y3rmp40719@gmail.com} \\ \href{https://www.linkedin.com/in/tzu-chun-hsu-ab4b3b188/}{LinkedIn} \\ \href{https://github.com/Oscarshu0719}{GitHub}}  %
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+% EDUCATION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
@@ -32,74 +31,97 @@
 {\bf Zhejiang University} \hfill {09 2016 – 07 2020}\\
 Bachelor of Engineering in Computer Science and Technology \hfill \textit{Hangzhou, China}
 \begin{itemize}
-    \item Last two years cumulative GPA: 3.30/4.00
+    \item Last two years GPA: 3.30/4.00
 \end{itemize}
 
 {\bf National Yang Ming Chiao Tung University} \hfill {09 2022 – 08 2024 (Expected)}\\
 Master of Science in Computer Science and Engineering \hfill \textit{Hsinchu, Taiwan}
 \begin{itemize}
-    \item First semester GPA: 4.15/4.30
+    \item First year GPA: 4.04/4.30
 \end{itemize}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
+% PROJECTS
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{PROJECTS}
 \vspace{-1.25em}
-\item \textbf{\href{https://docs.google.com/presentation/d/1ge2It3UsAvTwpAk-9LUnmiz7dRqJnpFX/edit?usp=sharing&ouid=101248488395326982475&rtpof=true&sd=true}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}}}} \hfill {04 2018 – 05 2019}\\\mbox{} \hfill \textit{Hangzhou, China}
-\begin{itemize}
-    \item Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN.
-    % \item Improved VAE to extract chords more easily.
-    \item Introduced WGAN-GP to solve mode collapse and vanishing gradient problem.
-    % \item Proposed three distinct loss functions: \textit{element-wise}, \textit{discriminator dominant}, and \textit{hybrid}.
-\end{itemize}
-\item \textbf{\href{https://drive.google.com/file/d/1QqgPoRGhaSeS0QWrjnR8mxhvV_onwZ5y/view?usp=drive_link}{\textbf{\large{\underline{Voice Conversion Based on Generative Adversarial Networks}}}}} \hfill {03 2020 -- 05 2020}\\\mbox{} \hfill \textit{Hangzhou, China}
-\begin{itemize}
-    \item Improved StarGAN-VC2 based on multi-speaker non-parallel corpus.
-    \item Introduced WGAN-div, AdaIN layer, and neural vocoder, WaveGlow, for better results.
-    % \item Introduced WGAN-div to resolve k-Lipschitz constraint of WGAN.
-    % \item Replaced cIN layer with trainable AdaIN layer for better performance.
-    % \item Introduced neural vocoder, WaveGlow, to generate high quality speech from mel-spectrograms.
-\end{itemize}
-\item \textbf{Synthetic Data Generation using Conditional Normalizing Flows} \hfill {03 2023 -- 05 2023}\\\mbox{} \hfill \textit{Hsinchu, Taiwan}
-\begin{itemize}
-    \item Ability to replace original datasets and maintain same data distribution, and also highlight outliers for analysis.
-    \item Built an B/S application to visualize results.
-\end{itemize}
+    \item \textbf{\href{https://docs.google.com/presentation/d/1797idRRmgeD2JnUslGbflmGUO2X5lMY6/edit?usp=drive_link&ouid=101248488395326982475&rtpof=true&sd=true}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}}}} \hfill {04 2018 – 05 2019}\\
+    \mbox{} \hfill \textit{Hangzhou, China}
+    \begin{itemize}
+        \item Proposed a chord learning framework for multi-track symbolic music generation\\based on VAE and GAN.
+        % \item Improved VAE to extract chords more easily.
+        \item Introduced WGAN-GP to solve mode collapse and vanishing gradient problem.
+        % \item Proposed three distinct loss functions: \textit{element-wise}, \textit{discriminator dominant}, and \textit{hybrid}.
+    \end{itemize}
+
+    \item \textbf{\href{https://drive.google.com/file/d/1736XHtaeT58FL_gbOa9XjlyA6xAXDkg2/view?usp=drive_link}{\textbf{\large{\underline{Voice Conversion Based on Generative Adversarial Networks}}}}} \hfill {03 2020 -- 05 2020}\\
+    \mbox{} \hfill \textit{Hangzhou, China}
+    \begin{itemize}
+        \item Improved StarGAN-VC2 based on multi-speaker non-parallel corpus.
+        \item Introduced WGAN-div, AdaIN layer, and neural vocoder, WaveGlow, for better results.
+        % \item Introduced WGAN-div to resolve k-Lipschitz constraint of WGAN.
+        % \item Replaced cIN layer with trainable AdaIN layer for better performance.
+        % \item Introduced neural vocoder, WaveGlow, to generate high quality speech from mel-spectrograms.
+    \end{itemize}
+    
+    \item \textbf{\href{https://drive.google.com/file/d/176xCWH6j0VAuoXLtB_HppxyZN-6ezq9_/view?usp=drive_link}{\textbf{\large{\underline{Synthetic Data Generation using Conditional Normalizing Flows}}}}} \hfill {03 2023 -- 05 2023}\\
+    \mbox{} \hfill \textit{Hsinchu, Taiwan}
+    \begin{itemize}
+        \item Ability to replace original datasets and maintain same data distribution, and also\\
+        highlight outliers for analysis.
+        \item Built a browser-server web application to visualize results.
+    \end{itemize}
+
+    \item \textbf{Floating image quality compensation algorithm technology} \hfill {06 2023 -- 12 2023 (Expected)}\\
+    \mbox{} \hfill \textit{Hsinchu, Taiwan}
+    \begin{itemize}
+        \item Improved image quality of poorly captured floating images due to\\hardware tolerance using CNNs.
+        \item Ability to train and employ on different devices.
+    \end{itemize}
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
-% AWARDS STRENGTHS	
+% AWARDS	
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{AWARDS}
 \vspace{-1.25em}
-\item \textbf{CCCC-Mobile Application Innovation Contest} \hfill {09 2018}\\{First Prize} \hfill \textit{Hangzhou, China}
-\item \textbf{The 4th ”Internet+” Innovation and Entrepreneurship Competition} \hfill {09 2018}\\{Gold Award} \hfill \textit{Hangzhou, China}
-\item \textbf{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)} \hfill {04 2018 – 05 2019}\\{Excellent} \hfill \textit{Hangzhou, China}
+    \item \textbf{CCCC-Mobile Application Innovation Contest} \hfill {09 2018}\\
+    {First Prize and Most Innovative Award} \hfill \textit{Hangzhou, China}
+
+    \item \textbf{The 4th ”Internet+” Innovation and Entrepreneurship Competition} \hfill {09 2018}\\
+    {Gold Award} \hfill \textit{Hangzhou, China}
+
+    \item \textbf{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)} \hfill {04 2018 – 05 2019}\\
+    {Excellent} \hfill \textit{Hangzhou, China}
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE STRENGTHS	
+% EXPERIENCE	
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{EXPERIENCE}
-\vspace{-1.25em}
-\item \textbf{The University of British Columbia Vancouver Summer Program} \hfill {07 2019 – 08 2019}\\\mbox{} \hfill \textit{Vancouver, Canada}
-\begin{itemize}
-    \item Included 2 courses, ”Algorithms and the World Wide Web” and ”Building Modern Web Applications”.
-    \item Collaborated with my teammates to complete our projects as team leader.
-\end{itemize}
-\end{rSection} 
+% \begin{rSection}{EXPERIENCE}
+% \vspace{-1.25em}
+% \item \textbf{The University of British Columbia Vancouver Summer Program} \hfill {07 2019 – 08 2019}\\
+% \mbox{} \hfill \textit{Vancouver, Canada}
+%     \begin{itemize}
+%         \item Included 2 courses, ”Algorithms and the World Wide Web” and ”Building Modern Web Applications”.
+%         \item Collaborated with my teammates to complete our projects as team leader.
+%     \end{itemize}
+% \end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% SKILLS	
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{SKILLS}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Python, Java, C, JavaScript\\
-Technologies/Frameworks & PyTorch, Flask, Spring Boot, Vue.js, Git, SQL, MongoDB
+Languages & Python, Java, C, JavaScript, SQL\\
+Technologies/Frameworks & PyTorch, Flask, Spring Boot, Vue.js, Git, MySQL, MongoDB
 \end{tabular}\\
 \end{rSection}
 
