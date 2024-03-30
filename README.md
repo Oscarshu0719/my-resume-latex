@@ -2,6 +2,10 @@
 
 > TODO: Font Awesome version is NOT compatible for my MacBook Air M1. Failed to compile zh-tw version.
 
+## TODO
+
+- [ ] Compile zh-tw version with Font Awesome.
+
 ## Usage
 
 - English (en) version:
