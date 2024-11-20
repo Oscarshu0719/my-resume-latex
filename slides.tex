@@ -61,8 +61,8 @@
   \endgroup
 }
 
-\pgfdeclareimage[height=0.7cm]{company-logo}{img/realtek.png}
-\logo{\pgfuseimage{company-logo}}
+% \pgfdeclareimage[height=0.7cm]{company-logo}{img/realtek.png}
+% \logo{\pgfuseimage{company-logo}}
 
 \author{\huge{Tzu-Chun, Oscar, Hsu}} 
 \institute[National Yang Ming Chiao Tung University (NYCU)] 
@@ -77,7 +77,7 @@
         \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
     }
 }
-\date{July 7th, 2023} 
+\date{November 21, 2024} 
 
 \begin{document}
 
@@ -97,13 +97,13 @@
 \section{Education}
 \begin{frame}
     \frametitle{Education}
-    \begin{block}{Zhejiang University}
+    \begin{block}{Zhejiang University} % #47 QS 2025.
         Bachelor of Engineering in Computer Science and Technology\\
         Hangzhou, China \hfill 09 2016 – 07 2020
     \end{block}
     \begin{block}{National Yang Ming Chiao Tung University}
         Master of Science in Computer Science and Engineering\\
-        Hsinchu, Taiwan \hfill 09 2022 – 08 2024 (Expected)
+        Hsinchu, Taiwan \hfill 09 2022 – 01 2025 (Expected)
     \end{block}
 \end{frame}
 
@@ -119,16 +119,26 @@
             \item Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN.
             \item Introduced WGAN-GP to solve mode collapse and vanishing gradient problem.
         \end{itemize}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.4]{img/srtp-arch.png}
+        \end{figure}
     \end{block}
 \end{frame}
 
 \begin{frame}
     \frametitle{Projects}
-    \begin{block}{\href{https://drive.google.com/file/d/1QqgPoRGhaSeS0QWrjnR8mxhvV_onwZ5y/view?usp=drive_link}{2. Voice Conversion Based on Generative Adversarial Networks}}
+    \begin{block}{\href{https://drive.google.com/file/d/1QqgPoRGhaSeS0QWrjnR8mxhvV_onwZ5y/view?usp=drive_link}{2. (Bachelor's Thesis) Voice Conversion Based on Generative Adversarial Networks}}
         \begin{itemize}
             \item Improved StarGAN-VC2 based on multi-speaker non-parallel corpus.
             \item Introduced WGAN-div, AdaIN layer, and neural vocoder, WaveGlow, for better results.
         \end{itemize}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.15]{img/undergraduate-thesis-arch.png}
+        \end{figure}
     \end{block}
 \end{frame}
 
@@ -139,8 +149,29 @@
             \item Ability to replace original datasets and maintain same data distribution, and also highlight outliers for analysis.
             \item Built an B/S application to visualize results.
         \end{itemize}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.25]{img/cnf.png}
+        \end{figure}
     \end{block}
 \end{frame}
+
+% TODO: Add architecture.
+% \begin{frame}
+%     \frametitle{Projects}
+%     \begin{block}{4. (Master's Thesis, in progress) Floating image quality compensation algorithm technology}
+%         \begin{itemize}
+%             \item Simulated imaging process and enhanced the perceived image quality.
+%             \item Ability to simulate on different devices with calculations performed only once per simulation.
+%         \end{itemize}
+
+%         \begin{figure}[H]
+%             \centering
+%             \includegraphics[scale=0.25]{img/floating-img-arch.png}
+%         \end{figure}
+%     \end{block}
+% \end{frame}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SLIDES
@@ -209,4 +240,4 @@
     \end{center}
 \end{frame}
 
-\end{document} 
+\end{document}
