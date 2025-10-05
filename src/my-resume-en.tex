@@ -2,6 +2,8 @@
 
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
 \usepackage{xcolor}
+\usepackage{fontspec}
+\defaultfontfeatures{Extension = .otf}
 \usepackage{fontawesome}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
@@ -23,25 +25,37 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{Work Experience}
+    {\bf Camera ISP Engineer} \hfill {02 2025 -- present}\\
+    {AI camera algorithm development @ Realtek Semiconductor Corp.} \hfill \textit{Hsinchu, Taiwan}\\
+    \begin{itemize}
+        \item ISP Auto Verification, CModel, and SDK development.
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 % EDUCATION
 %----------------------------------------------------------------------------------------
-
+\vspace{-1em}
 \begin{rSection}{Education}
 
 {\bf Zhejiang University} \hfill {09 2016 -- 07 2020}\\
 {Bachelor of Engineering in Computer Science and Technology} \hfill \textit{Hangzhou, China}\\
 $\bullet$ Last two years GPA: 3.30/4.00
 
-{\bf National Yang Ming Chiao Tung University} \hfill {09 2022 -- 08 2024 (Expected)}\\
+{\bf National Yang Ming Chiao Tung University} \hfill {09 2022 -- 02 2025}\\
 {Master of Science in Computer Science and Engineering} \hfill \textit{Hsinchu, Taiwan}\\
-$\bullet$ Overall GPA: 4.08/4.30
+$\bullet$ Overall GPA: 4.19/4.30
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 % PROJECTS
 %----------------------------------------------------------------------------------------
-
+\vspace{-1em}
 \begin{rSection}{PROJECTS}
 \vspace{-1.25em}
     \item \textbf{\href{https://docs.google.com/presentation/d/1797idRRmgeD2JnUslGbflmGUO2X5lMY6/edit?usp=drive_link&ouid=101248488395326982475&rtpof=true&sd=true}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}}}} \hfill {04 2018 -- 05 2019}\\
@@ -63,26 +77,26 @@ $\bullet$ Overall GPA: 4.08/4.30
         % \item Introduced neural vocoder, WaveGlow, to generate high quality speech from mel-spectrograms.
     \end{itemize}
     
-    \item \textbf{\href{https://drive.google.com/file/d/176xCWH6j0VAuoXLtB_HppxyZN-6ezq9_/view?usp=drive_link}{\textbf{\large{\underline{Synthetic Data Generation using Conditional Normalizing Flows}}}}} \hfill {03 2023 -- 05 2023}\\
-    \mbox{} \hfill \textit{Hsinchu, Taiwan}
-    \begin{itemize}
-        \item Ability to replace original datasets and maintain same data distribution, and also\\
-        highlight outliers for analysis.
-        \item Built a browser-server web application to visualize results.
-    \end{itemize}
+    % \item \textbf{\href{https://drive.google.com/file/d/176xCWH6j0VAuoXLtB_HppxyZN-6ezq9_/view?usp=drive_link}{\textbf{\large{\underline{Synthetic Data Generation using Conditional Normalizing Flows}}}}} \hfill {03 2023 -- 05 2023}\\
+    % \mbox{} \hfill \textit{Hsinchu, Taiwan}
+    % \begin{itemize}
+    %     \item Ability to replace original datasets and maintain same data distribution, and also\\
+    %     highlight outliers for analysis.
+    %     \item Built a browser-server web application to visualize results.
+    % \end{itemize}
 
-    \item \textbf{Floating image quality compensation algorithm technology} \hfill {06 2023 -- 07 2024 (Expected)}\\
+    \item \textbf{Floating image quality compensation algorithm technology} \hfill {08 2023 -- 02 2025}\\
     \mbox{} \hfill \textit{Hsinchu, Taiwan}
     \begin{itemize}
-        \item Improved image quality of poorly captured floating images due to\\hardware tolerance based on CNNs.
-        \item Ability to train and employ on different devices.
+        \item Enhanced image quality of floating images degraded by hardware imperfections.
+        \item Proposed a two-stage method: (1) simulating the imaging process by solving a QP problem derived from optical principles, and (2) refining light field images through iterative optimization based on the simulation.
     \end{itemize}
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
 % AWARDS	
 %----------------------------------------------------------------------------------------
-
+\vspace{-1em}
 \begin{rSection}{AWARDS}
 \vspace{-1.25em}
     \item \textbf{CCCC-Mobile Application Innovation Contest} \hfill {09 2018}\\
@@ -91,14 +105,14 @@ $\bullet$ Overall GPA: 4.08/4.30
     \item \textbf{The 4th ”Internet+” Innovation and Entrepreneurship Competition} \hfill {09 2018}\\
     {Gold Award} \hfill \textit{Hangzhou, China}
 
-    \item \textbf{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)} \hfill {04 2018 -- 05 2019}\\
-    {Excellent} \hfill \textit{Hangzhou, China}
+    % \item \textbf{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)} \hfill {04 2018 -- 05 2019}\\
+    % {Excellent} \hfill \textit{Hangzhou, China}
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE	
 %----------------------------------------------------------------------------------------
-
+% \vspace{-1em}
 % \begin{rSection}{EXPERIENCE}
 % \vspace{-1.25em}
 % \item \textbf{The University of British Columbia Vancouver Summer Program} \hfill {07 2019 -- 08 2019}\\
@@ -112,7 +126,7 @@ $\bullet$ Overall GPA: 4.08/4.30
 %----------------------------------------------------------------------------------------
 % SKILLS	
 %----------------------------------------------------------------------------------------
-
+\vspace{-1em}
 \begin{rSection}{SKILLS}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & Python, Java, C, JavaScript, SQL\\
