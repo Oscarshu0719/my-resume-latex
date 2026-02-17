@@ -6,4 +6,5 @@
 *.toc 
 *.nav
 *.snm
+*.synctex.gz
 .DS_Store
