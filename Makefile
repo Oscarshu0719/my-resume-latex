@@ -7,7 +7,14 @@ DIR_SRC=./src
 DIR_DST=./docs
 DIR_STYLES=./src/styles
 
-LATEX_BUILD_CMD=TEXINPUTS=$(DIR_STYLES): xelatex -synctex=1 -shell-escape -interaction=nonstopmode -output-directory $(DIR_DST)
+ifeq ($(TARGET), zh)
+    LATEX_ENGINE = xelatex
+else ifeq ($(TARGET), intro)
+    LATEX_ENGINE = xelatex
+else
+    LATEX_ENGINE = pdflatex
+endif
+LATEX_BUILD_CMD=TEXINPUTS=$(DIR_STYLES): $(LATEX_ENGINE) -synctex=1 -shell-escape -interaction=nonstopmode -output-directory $(DIR_DST)
 
 default: en
 

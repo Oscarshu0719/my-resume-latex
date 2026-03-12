@@ -16,6 +16,7 @@
 \usepackage{xcolor}
 \usepackage{calc}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \setbeamertemplate{caption}[numbered]
 
@@ -61,15 +62,12 @@
   \endgroup
 }
 
-% \pgfdeclareimage[height=0.7cm]{company-logo}{img/realtek.png}
-% \logo{\pgfuseimage{company-logo}}
+\pgfdeclareimage[height=0.7cm]{company-logo}{img/mediatek.png}
+\logo{\pgfuseimage{company-logo}}
 
-\author{\huge{Tzu-Chun, Oscar, Hsu}} 
-\institute[National Yang Ming Chiao Tung University (NYCU)] 
+\author{\Huge{Tzu-Chun Hsu}\\[10pt]} 
+\institute[Realtek Semiconductor Corp.] 
 {
-    \normalsize{
-        Institute of Computer Science and Engineering, \\
-        National Yang Ming Chiao Tung University (NYCU)} \\~\\
     \scriptsize{
         \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719} ~} 
         \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} \\~\\
@@ -77,7 +75,7 @@
         \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
     }
 }
-\date{November 21, 2024} 
+\date{March 13, 2026} 
 
 \begin{document}
 
@@ -89,6 +87,56 @@
 % \frametitle{Table of contents} 
 % \tableofcontents 
 % \end{frame}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\begin{frame}
+    \frametitle{Work Experience}
+    \begin{block}{Camera ISP Firmware Engineer}
+        \begin{overlayarea}{\textwidth}{0.7\textheight}
+            Realtek Semiconductor Corp.\\
+            Hsinchu, Taiwan \hfill 02 2025 – present
+            \begin{enumerate}
+                \item \textbf{ISP Development \& Algorithm Optimization.}
+                \item \textbf{Software Architecture \& Development.}
+                \item \textbf{Test Automation \& Verification.}
+            \end{enumerate}
+        \end{overlayarea}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Work Experience}
+    \begin{block}{Camera ISP Firmware Engineer}
+        \begin{overlayarea}{\textwidth}{0.7\textheight}
+            Realtek Semiconductor Corp.\\
+            Hsinchu, Taiwan \hfill 02 2025 – present
+            \begin{enumerate}
+                \item<1> \textbf{ISP Development \& Algorithm Optimization:}
+                \only<1>{\begin{itemize}
+                    \item Developed high-resolution image stitching solution for smart glasses.
+                    \item Aligned ISP pipeline for snapshot and streaming capture to ensure consistent output.
+                    \item Implemented ISP pipeline features for smart glasses with V4L2 and interrupt controls and optimized SDK flow.
+                    \item Migrated ISP engine for smart glasses from Linux to FreeRTOS.
+                \end{itemize}}
+                \item<2> \textbf{Software Architecture \& Development:}
+                \only<2>{\begin{itemize}
+                    \item Refactored core CModel architecture and consolidated sub-applications.
+                    \item Redesigned more detailed and readable image format table.
+                    \item Implemented thread and cross-process synchronization for Windows.
+                \end{itemize}}
+                \item<3> \textbf{Test Automation \& Verification:}
+                \only<3>{\begin{itemize}
+                    \item Designed and optimized automated verification systems for ISP/IPU (FPGA/ASIC) hardware platforms.
+                    \item Migrated communication protocol from JRPC to protobuf for the Linux-to-FreeRTOS migration.
+                \end{itemize}}
+            \end{enumerate}
+        \end{overlayarea}
+    \end{block}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SLIDES
@@ -103,7 +151,7 @@
     \end{block}
     \begin{block}{National Yang Ming Chiao Tung University}
         Master of Science in Computer Science and Engineering\\
-        Hsinchu, Taiwan \hfill 09 2022 – 01 2025 (Expected)
+        Hsinchu, Taiwan \hfill 09 2022 – 02 2025
     \end{block}
 \end{frame}
 
@@ -112,22 +160,36 @@
 %----------------------------------------------------------------------------------------
 
 \section{Projects}
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Projects}
     \begin{block}{\href{https://docs.google.com/presentation/d/1ge2It3UsAvTwpAk-9LUnmiz7dRqJnpFX/edit?usp=sharing&ouid=101248488395326982475&rtpof=true&sd=true}{1. Chord learning and adversarial framework for symbolic music generation}}
-        \begin{itemize}
-            \item Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN.
-            \item Introduced WGAN-GP to solve mode collapse and vanishing gradient problem.
-        \end{itemize}
-
-        \begin{figure}[H]
-            \centering
-            \includegraphics[scale=0.4]{img/srtp-arch.png}
-        \end{figure}
+        \begin{overlayarea}{\textwidth}{0.7\textheight}
+            \only<1>{
+                \begin{itemize}
+                    \item Proposed a chord learning framework for multi-track symbolic music generation based on VAE and GAN.
+                    \item Introduced WGAN-GP to solve mode collapse and vanishing gradient problem.
+                \end{itemize}
+            
+                \begin{figure}
+                    \centering
+                    \includegraphics[scale=0.4]{img/srtp-arch.png}
+                \end{figure}
+            }
+            
+            \only<2>{
+                \setbeamertemplate{itemize item}{$\checkmark$}
+                \begin{itemize}
+                    \item CCCC-Mobile Application Innovation Contest\\
+                    \textit{First Prize and Most Innovative Award}
+                    \item The 4th Internet+ Innovation and Entrepreneurship Competition\\
+                    \textit{Gold Award}
+                \end{itemize}
+            }
+        \end{overlayarea}
     \end{block}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Projects}
     \begin{block}{\href{https://drive.google.com/file/d/1QqgPoRGhaSeS0QWrjnR8mxhvV_onwZ5y/view?usp=drive_link}{2. (Bachelor's Thesis) Voice Conversion Based on Generative Adversarial Networks}}
         \begin{itemize}
@@ -142,20 +204,36 @@
     \end{block}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Projects}
-    \begin{block}{3. Synthetic Data Generation using Conditional Normalizing Flows}
+    \begin{block}{3. (Master's Thesis) Floating image quality compensation algorithm technology}
         \begin{itemize}
-            \item Ability to replace original datasets and maintain same data distribution, and also highlight outliers for analysis.
-            \item Built an B/S application to visualize results.
+            \item Proposed a two-stage method to enhanced image quality of floating images: 
+            (1) simulating imaging process by solving QP problem derived from optical principles, and 
+            (2) refining light field images iteratively based on the simulation.
         \end{itemize}
 
         \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.25]{img/cnf.png}
+            \includegraphics[scale=0.15]{img/correction-4.png}
         \end{figure}
     \end{block}
 \end{frame}
+
+% \begin{frame}[t]
+%     \frametitle{Projects}
+%     \begin{block}{3. Synthetic Data Generation using Conditional Normalizing Flows}
+%         \begin{itemize}
+%             \item Ability to replace original datasets and maintain same data distribution, and also highlight outliers for analysis.
+%             \item Built an B/S application to visualize results.
+%         \end{itemize}
+
+%         \begin{figure}[H]
+%             \centering
+%             \includegraphics[scale=0.25]{img/cnf.png}
+%         \end{figure}
+%     \end{block}
+% \end{frame}
 
 % TODO: Add architecture.
 % \begin{frame}
@@ -177,35 +255,35 @@
 %	AWARDS SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
-\begin{frame}
-    \frametitle{Awards}
-    \begin{block}{CCCC-Mobile Application Innovation Contest}
-        First Prize \hfill 09 2018
-    \end{block}
-    \begin{block}{The 4th ”Internet+” Innovation and Entrepreneurship Competition}
-        Gold Award \hfill 09 2018
-    \end{block}
-    \begin{block}{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)}
-        Excellent \hfill 04 2018 – 05 2019
-    \end{block}
-\end{frame}
+% \section{Awards}
+% \begin{frame}
+%     \frametitle{Awards}
+%     \begin{block}{CCCC-Mobile Application Innovation Contest}
+%         First Prize \hfill 09 2018
+%     \end{block}
+%     \begin{block}{The 4th ”Internet+” Innovation and Entrepreneurship Competition}
+%         Gold Award \hfill 09 2018
+%     \end{block}
+%     \begin{block}{College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)}
+%         Excellent \hfill 04 2018 – 05 2019
+%     \end{block}
+% \end{frame}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
-\begin{frame}
-    \frametitle{Experience}
-    \begin{block}{The University of British Columbia Vancouver Summer Program}
-        Vancouver, Canada \hfill 07 2019 – 08 2019
-        \begin{itemize}
-            \item Included 2 courses, ”Algorithms and the World Wide Web” and ”Building Modern Web Applications”.
-            \item Collaborated with my teammates to complete our projects as team leader.
-        \end{itemize}
-    \end{block}
-\end{frame}
+% \section{Experience}
+% \begin{frame}
+%     \frametitle{Experience}
+%     \begin{block}{The University of British Columbia Vancouver Summer Program}
+%         Vancouver, Canada \hfill 07 2019 – 08 2019
+%         \begin{itemize}
+%             \item Included 2 courses, ”Algorithms and the World Wide Web” and ”Building Modern Web Applications”.
+%             \item Collaborated with my teammates to complete our projects as team leader.
+%         \end{itemize}
+%     \end{block}
+% \end{frame}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS SLIDES
@@ -215,22 +293,18 @@
 \begin{frame}
     \frametitle{Skills}
     \begin{block}{Languages}
-        Python, Java, C, JavaScript
+        Python, C, C++, Java, JavaScript
     \end{block}
     \begin{block}{Technologies/Frameworks}
-        PyTorch, Flask, Spring Boot, Vue.js, Git, SQL, MongoDB
+        Flask, PyTorch, Spring Boot, Vue.js
     \end{block}
 \end{frame}
 
 \section{Thanks}
 \begin{frame}
     \begin{center}
-        \huge{\texttt{Thanks for your attention}} \\~\\
-        \LARGE{Tzu-Chun, Oscar, Hsu} \\
-        \vspace{8pt}
-        \normalsize{
-            Institute of Computer Science and Engineering, \\
-            National Yang Ming Chiao Tung University (NYCU)} \\~\\
+        \huge{\texttt{Thanks for your attention}} \\
+        \Huge{Tzu-Chun Hsu} \\~\\
         \scriptsize{
             \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719} ~} 
             \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} \\~\\
@@ -239,5 +313,4 @@
         }
     \end{center}
 \end{frame}
-
 \end{document}
