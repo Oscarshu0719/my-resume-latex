@@ -5,6 +5,7 @@
 ```bash
 make en # English
 make zh # Traditional Chinese
+make aspeed # ASpeed resume
 make slides # Interview slides
 make intro # Self-introduction slides
 make clean # Clean auxiliary files
