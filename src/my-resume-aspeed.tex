@@ -1,0 +1,226 @@
+\documentclass{resume}
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+\usepackage{ctex}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\defaultfontfeatures{Extension = .otf}
+\usepackage{fontawesome}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% \hypersetup{%
+%   colorlinks=false,% hyperlinks will be black
+%   linkbordercolor=red,% hyperlink borders will be red
+%   pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+% }
+
+\name{Tzu Chun, Hsu}
+\address{New Taipei City, Taiwan} 
+\address{
+\small \href{tel:+886-987605719}{ \raisebox{-0.1\height}\faPhone\ \underline{+886-987605719} ~} \href{mailto:vm3y3rmp40719@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vm3y3rmp40719@gmail.com}} ~ 
+  \href{https://www.linkedin.com/in/tzu-chun-hsu-ab4b3b188/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{tzu-chun-hsu-ab4b3b188}}  ~
+  \href{https://github.com/Oscarshu0719}{\raisebox{-0.2\height}\faGithub\ \underline{Oscarshu0719}}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{Work Experience}
+    {\bf Camera ISP Firmware Engineer, Realtek Semiconductor Corp.} \hfill {02 2025 -- present}\\
+    {\textit{AI camera algorithm development}} \hfill \textit{Hsinchu, Taiwan}\\
+    $\cdot$ Developed high-resolution image stitching solution for smart glasses to ensure consistent ISP pipeline behavior between streaming and snapshot modes.\\
+    $\cdot$ Implemented ISP pipeline features for smart glasses with V4L2 and interrupt controls and optimized SDK flow for maintainability and efficiency.\\
+    $\cdot$ Migrated ISP engine for smart glasses from Linux to FreeRTOS and implemented custom porting layer for unsupported interfaces.\\
+    $\cdot$ Refactored core CModel architecture and consolidated sub-applications for improved maintainability and reduced code redundancy.\\
+    $\cdot$ Implemented low-level control APIs with thread and cross-process synchronization for Windows for cross-platform compatibility.\\
+    $\cdot$ Designed and optimized automated verification systems for ISP/IPU (FPGA/ASIC) hardware platforms, involving Python server and C agent on hardware platforms.\\
+    $\cdot$ Migrated communication protocol from JRPC to protobuf for the Linux-to-FreeRTOS migration for cross-platform compatibility and improved transmission efficiency.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{Education}
+
+{\bf National Yang Ming Chiao Tung University} \hfill {09 2022 -- 02 2025}\\
+{\textit{Master of Science in Computer Science and Engineering}} \hfill \textit{Hsinchu, Taiwan}\\
+$\cdot$ Overall GPA: 4.19/4.30
+
+{\bf Zhejiang University} \hfill {09 2016 -- 07 2020}\\
+{\textit{Bachelor of Engineering in Computer Science and Technology}} \hfill \textit{Hangzhou, China}\\
+$\cdot$ Last two years GPA: 3.30/4.00
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% AWARDS
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{AWARDS}
+    {\bf CCCC-Mobile Application Innovation Contest} \hfill {09 2018}\\
+    {\textit{First Prize and Most Innovative Award}} \hfill \textit{Hangzhou, China}
+
+    {\bf The 4th ”Internet+” Innovation and Entrepreneurship Competition} \hfill {09 2018}\\
+    {\textit{Gold Award}} \hfill \textit{Hangzhou, China}
+
+    {\bf College Students’ Innovative Entrepreneurial Training Plan Program (SRTP)} \hfill {04 2018 -- 05 2019}\\
+    {\textit{Excellent}} \hfill \textit{Hangzhou, China}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% SKILLS	
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{SKILLS}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Languages & Python, C, C++, Java, JavaScript\\
+    Technologies/Frameworks & Flask, PyTorch, Spring Boot, Vue.js
+\end{tabular}\\
+\end{rSection}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+    \item \textbf{\href{https://docs.google.com/presentation/d/1797idRRmgeD2JnUslGbflmGUO2X5lMY6/edit?usp=drive_link&ouid=101248488395326982475&rtpof=true&sd=true}{\textbf{\large{\underline{Chord learning and adversarial framework for symbolic music generation}}}}} \hfill {04 2018 -- 05 2019}\\
+    \mbox{} \hfill \textit{Hangzhou, China}
+
+    This project developed an automated arrangement system for ancient zither music using a hybrid deep learning architecture. 
+    We proposed a framework combining VAE (Variational Autoencoder) for structural feature extraction and GAN (Generative Adversarial Network) for enhancing creative variance. 
+    To stabilize the training process and resolve issues like mode collapse, we introduced WGAN-GP and designed three customized loss functions. 
+    Furthermore, We developed an algorithmic Zither Music Theory Filter to incorporate traditional pentatonic scales and performance techniques (e.g., tremolo, glissando) into the generative process. 
+    The project resulted in a functional iOS App with chord visualization and was recognized with the First Prize and Most Innovative Award in the CCCC-Mobile Application Innovation Contest and 
+    the Gold Award in the 4th "Internet+" Innovation and Entrepreneurship Competition.
+
+    \item \textbf{\href{https://drive.google.com/file/d/1736XHtaeT58FL_gbOa9XjlyA6xAXDkg2/view?usp=drive_link}{\textbf{\large{\underline{Voice Conversion Based on Generative Adversarial Networks}}}}} \hfill {03 2020 -- 05 2020}\\
+    \mbox{} \hfill \textit{Hangzhou, China}
+
+    This project proposed an enhanced non-parallel voice conversion (VC) framework based on StarGAN-VC2 to improve the naturalness and quality of converted speech. 
+    Key optimizations include transitioning acoustic features from traditional MCEPs to Mel-spectrograms and 
+    replacing Conditional Instance Normalization (CIN) with Adaptive Instance Normalization (AdaIN) for more effective style transfer. 
+    Additionally, WaveGlow, a flow-based neural vocoder, was integrated to replace the WORLD vocoder, significantly enhancing synthesized voice clarity. 
+    Experimental results, validated by Mel-cepstral Distortion (MCD) and Mean Opinion Score (MOS), demonstrated that the proposed model outperforms the StarGAN-VC2 baseline in both objective acoustic similarity and subjective naturalness.
+    
+    \item \textbf{\href{https://drive.google.com/file/d/176xCWH6j0VAuoXLtB_HppxyZN-6ezq9_/view?usp=drive_link}{\textbf{\large{\underline{Synthetic Data Generation using Conditional Normalizing Flows}}}}} \hfill {03 2023 -- 05 2023}\\
+    \mbox{} \hfill \textit{Hsinchu, Taiwan}
+
+    This project introduced SurrogateFlow, a generative model based on Conditional Normalizing Flows (CNF) designed to create high-fidelity synthetic datasets. 
+    Unlike GANs, SurrogateFlow leveraged the exact density estimation of CNFs to avoid mode collapse, ensuring the generated data maintains the full distribution and integrity of the original dataset. 
+    A key innovation was the integration of anomaly scores into the training process, allowing users to adjust sampling probabilities to highlight outliers for scientific analysis. 
+    Experimental results demonstrated that SurrogateFlow outperforms Gaussian Mixture Models (GMM) and GANs in terms of data generation quality, comprehensiveness, and the ability to handle privacy-sensitive data.
+
+    \item \textbf{Floating image quality compensation algorithm technology} \hfill {08 2023 -- 02 2025}\\
+    \mbox{} \hfill \textit{Hsinchu, Taiwan}
+
+    This project addressed image degradation in light field floating 3D displays caused by hardware imperfections, such as misalignment, distortion, and ghosting. 
+    I developed a two-stage compensation algorithm: (1) using Operator Splitting Quadratic Program (OSQP) to model the physical imaging process and pre-calculate lens intensity weights, and 
+    (2) an iterative optimization framework to refine light field images based on a custom objective function. 
+    By decoupling device-specific optical weights from image refinement, the proposed method significantly reduced computational overhead. 
+    Experimental results demonstrated that this approach effectively compensates for manufacturing defects and display panel degradation, 
+    aligning perceived image quality with theoretical optical standards.
+\end{rSection}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% COURSES	
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{COURSES}
+\subsection*{Undergraduate Course List:}
+
+\noindent
+\begin{minipage}[t]{0.31\textwidth}
+    \subsubsection*{專業必修與核心課程}
+    \begin{enumerate}
+        \item 程序設計基礎
+        \item 計算機科學基礎
+        \item 離散數學及其應用
+        \item 程序設計專題
+        \item 數字邏輯設計
+        \item 數據結構基礎
+        \item 面向對象程序設計
+        \item 面向信息技術的溝通技巧
+        \item 數據庫系統
+        \item 高級數據結構與算法分析
+        \item 密碼學
+        \item 計算機組成
+        \item 操作系統
+        \item 計算機體系結構
+        \item 計算機網絡
+        \item Java應用技術
+        \item 計算理論
+        \item 編譯原理
+        \item 計算機科學思想史
+        \item 軟件工程
+        \item 專題研討
+        \item 人工智能
+        \item 博奕論原理與應用
+        \item 智能終端軟件開發
+        \item 應用運籌學基礎
+        \item 畢業論文（設計）
+    \end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+    \subsubsection*{公共基礎課程}
+    \begin{enumerate}
+        \item 大學英語III
+        \item 微積分（甲）I
+        \item 線性代數（甲）
+        \item 大學物理（甲）I
+        \item 微積分（甲）II
+        \item 大學物理實驗
+        \item 大學物理（乙）II
+        \item 概率論與數理統計
+        \item 大學英語II
+    \end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+    \subsubsection*{通識課程}
+    \begin{enumerate}
+        \item 電工電子學概論
+        \item 生物工程導論
+        \item 攝影藝術
+        \item 科學與生活
+        \item 綠色化學與可持續發展
+        \item Linux應用技術基礎
+        \item Java程序設計
+        \item 西方音樂簡史
+        \item 生命科學
+        \item 材料科學與人類文明
+        \item 應用運籌學
+        \item 服務科學導論
+        \item 成長中的親密關係
+        \item Python程序設計
+    \end{enumerate}
+\end{minipage}
+
+\newpage
+
+\vspace{-1em}
+\subsection*{Master Course List:}
+
+\noindent
+\begin{enumerate}
+    \item 資料視覺化與視覺分析
+    \item 演算法
+    \item 圖形理論
+    \item 影像處理
+    \item 深度學習
+    \item 深度學習實驗
+    \item 雲原生軟體開發與最佳實踐
+    \item 影像編修技術與特效合成
+\end{enumerate}
+
+\end{rSection} 
+
+\end{document}
